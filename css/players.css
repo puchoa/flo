@@ -1,0 +1,8 @@
+#players {
+    display: flex; 
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 640px;
+    min-height: 10px;
+  }
+  

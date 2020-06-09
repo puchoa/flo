@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/players.css">
+
+</head>
+
+<body>
+    <!-- Start -->
+
+    <div id="topSelect">
+
+        <select class="topSelect" id="division" onchange="setDivision()">
+            <option selected="selected" disabled>Select Division</option>
+            <option value="rooster">Rooster</option>
+            <option value="lightFeather">Light Feather</option>
+            <option value="feather">Feather</option>
+            <option value="light">Light</option>
+            <option value="middle">Middle</option>
+            <option value="middleHeavy">Middle Heavy</option>
+            <option value="heavy">Heavy</option>
+            <option value="superHeavy">Super Heavy</option>
+            <option value="ultraHeavy">Ultra Heavy</option>
+            <option value="women">Women\'s</option>
+            <option value="open">Open Class (mens)</option>
+        </select>
+
+        <select class="topSelect" id="belt" onchange="setRank()">
+            <option selected="selectBelt" disabled>Select Belt Rank</option>
+            <option value="black">Black Belt</option>
+            <option value="brown">Brown Belt</option>
+            <option value="purple">Purple Belt</option>
+            <option value="blue">Blue Belt</option>
+            <option value="white">White Belt</option>
+        </select>
+
+
+        <select class="topSelect" id="modes" onchange="setMode()">
+            <option selected="easy">Easy Mode</option>
+            <option value="expert">Expert Mode</option>
+        </select>
+
+
+
+        <input type="file" name="file-1[]" id="file-1" class="inputfile inputfile-1"
+         onchange="loadData()">
+        <label id="forfile1" for="file-1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                <path
+                    d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z" />
+                </svg> <span>Choose a file&hellip;</span></label>
+        <pre id="fileDisplayArea" hidden><pre>
+
+             
+</div>
+
+
+    </div>
+
+    <!-- End -->
+    <!-- Start2 -->
+
+    <div id="control">
+        <button class="controlBtn startBtn">Start Match</button>
+        <button class="controlBtn endBtn">End Match</button>
+    </div>
+    <div id="player1">
+        <div id="dd4Player1" class="dropdown">
+            <button class="scorerBtn fourBtn">+4</button>
+
+        </div>
+
+        <button class="scorerBtn threeBtn">+3</button>
+        <div id="dd2Player1" class="dropdown">
+            <button class="scorerBtn twoBtn">+2</button>
+        </div>
+
+        <button class="scorerBtn adv">ADV</button>
+        <button class="scorerBtn pen">PEN</button>
+        <button class="scorerBtn dq">DQ</button>
+        <div id="subPlayer1" class="dropdown">
+            <button class="scorerBtn sub">Win (Sub)</button>
+        </div>
+        
+    </div>
+    <div id="player2">
+        <div id="dd4Player2" class="dropdown">
+            <button class="scorerBtn2 fourBtn">+4</button>
+        </div>
+
+        <button class="scorerBtn2 threeBtn">+3</button>
+
+        <div id="dd2Player2" class="dropdown">
+            <button class="scorerBtn2 twoBtn">+2</button>
+        </div>
+        <button class="scorerBtn2 adv">ADV</button>
+        <button class="scorerBtn2 pen">PEN</button>
+        <button class="scorerBtn2 dq">DQ</button>
+        <div id="subPlayer2" class="dropdown">
+            <button class="scorerBtn2 sub">Win (Sub)</button>
+        </div>
+    </div>
+    <div id="ground">
+
+        <button class="groundBtn guardpull1">Guard Pull</button>
+        <button class="groundBtn2 guardpull2">Guard Pull</button>
+        <button class="groundBtn3 double">Double Guard Pull</button>
+    </div>
+
+
+    <table border="0">
+        <tr>
+            <th>
+                <div id="forRadios" class="container2">
+                    <form id="wrapper"></form>
+
+                </div>
+            </th>
+            <th>
+                <div id="control2">
+                    <button class="control2Btn deleteBtn">Delete Event</button>
+                    <button class="control2Btn exportBtn">Export File</button>
+                </div>
+            <th>
+                <div id="control3">
+                    <button class="control2Btn uploadBtn">Upload Data</button>
+                    <button class="control2Btn resetBtn">Reset</button>
+                </div>
+            </th>
+        </tr>
+       
+    </table>
+
+    
+ 
+
+   
+
+
+
+
+
+    <!-- End2 -->
+
+
+    <script src="Extension/jquery-3.4.1.min.js"></script>
+    <script src="js/download.js"></script>
+    <script src="js/buttons.js"></script>
+    <script src="js/quickSort.js"></script>
+    <script src="js/reset_delete.js"></script>
+    <script src="js/set.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>

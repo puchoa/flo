@@ -1,0 +1,31 @@
+{
+  "name": "Flo Extension",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Add features to Flograppling.com",
+  "background": {
+    "scripts": [
+      "Extension/jquery-3.4.1.min.js",
+      "Extension/background.js",
+      "payload.js"
+    ],
+    "persistent": true
+  },
+
+  "browser_action": {
+    "default_title": "Add Features!"
+  },
+
+  "icons": {
+    "16": "img/image_16.png",
+    "32": "img/image_32.png",
+    "48": "img/image_48.png",
+    "128": "img/image_128.png"
+  },
+
+
+  "permissions": [
+    "https://*.flograppling.com/video/*",
+    "tabs"
+  ]
+}
